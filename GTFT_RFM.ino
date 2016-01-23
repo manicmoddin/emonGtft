@@ -11,7 +11,6 @@
  * 
  * Written by Limor Fried/Ladyada for Adafruit Industries.
  * MIT license, all text above must be included in any redistribution
- * Splurge
  ****************************************************/
 
 #include <SPI.h>
@@ -262,14 +261,13 @@ void loop(void) {
     //}
 
     if (page == 1) {
-      if (cval_gen == 0) {
-        page = 3;
-        //drawGridMonitor(cval_use, old_use, temp, oldTemp);
-      }
-      
-      else {
-        drawSolarMonitor(cval_gen, old_gen, cval_use, old_use, grid, oldGrid, temp, oldTemp, oldChangeMe, changeMe);
-      }
+      //if (cval_gen == 0) {
+      //  page = 3; Turned this off ONLY FOR DEV...
+      //}
+      //
+      //else {
+      //  drawSolarMonitor(cval_gen, old_gen, cval_use, old_use, grid, oldGrid, temp, oldTemp, oldChangeMe, changeMe);
+      //}
     }
 
     if (page == 2) {
